@@ -1,12 +1,12 @@
 {
-  "name": "are-we-translations-yet",
+  "name": "are-we-hnt-yet",
   "version": "1.0.0",
-  "description": "[Site](https://gregtatum.github.io/are-we-translations-yet/)",
+  "description": "[Site](https://maxxcrawford.github.io/are-we-hnt-yet/)",
   "main": "index.js",
   "scripts": {
     "start": "http-server -c-1"
   },
-  "homepage": "https://github.com/gregtatum/are-we-translations-yet#readme",
+  "homepage": "https://github.com/maxxcrawford/are-we-hnt-yet#readme",
   "devDependencies": {
     "http-server": "^0.12.3"
   }
