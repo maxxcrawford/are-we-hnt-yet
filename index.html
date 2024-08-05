@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html class="motion-reduce:scroll-auto scroll-smooth">
 <head>
     <meta charset="utf-8">
     <title>Are We New Tab Yet?</title>
     <link href='static/page.css' rel='stylesheet' type='text/css'>
+     <script src="https://cdn.tailwindcss.com"></script>
     <script src='static/areweyet/chart.js'></script>
 </head>
 <body>
@@ -11,7 +12,7 @@
 
   <div id="all" class="milestones">
     <div class="desc-box-outer">
-      <div class="desc-box">
+      <div class="desc-box pt-8">
         <h2>Firefox Homepage New Tab</h2>
         <p>
           This chart tracks the overall work in the Firefox New Tab page component.
@@ -28,13 +29,36 @@
     </div>
   </div>
 
-  <h1><b>Ongoing Work</b></h1>
+  <h1 class="bg-stone-200 pb-4"><b>Ongoing Work</b></h1>
+
+  <nav class="bg-stone-200 pb-4 mb-8">
+    <ul class="flex justify-center gap-8">
+      <li>
+        <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#personalization">personalization</a>
+      </li>
+      <li>
+        <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#layout">layout</a>
+      </li>
+      <li>
+        <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#wallpaper">wallpaper</a>
+      </li>
+      <li>
+        <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#weather">weather</a>
+      </li>
+      <li>
+        <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#prefs">prefs</a>
+      </li>
+      <li>
+        <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#a11y">a11y</a>
+      </li>
+    </ul>
+  </nav>
 
   <div id="personalization" class="milestones">
     <div class="desc-box-outer">
-      <div class="desc-box">
+      <div class="desc-box pt-8">
         <h2>Explicit Topic Personalization</h2>
-        <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1904592">Bug 1904592</a>
+        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1904592">Bug 1904592</a>
         <p>
           This chart tracks the effort to add explicit topic personalization for New Tab content
         </p>
@@ -49,13 +73,31 @@
     </div>
   </div>
 
+  <div id="layout" class="milestones">
+    <div class="desc-box-outer">
+      <div class="desc-box pt-8">
+        <h2>Wallpaper Feature</h2>
+        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1911653">Bug 1911653</a>
+        <p>
+          This chart tracks the layout experiment for the New Tab page
+        </p>
+      </div>
+    </div>
+
+    <div style="width: 70%" class="iframe-container">
+      <div>
+          <!-- <iframe src="./burnup/index.html?since=2024-01-05&blocks=1911653&priority=P1&priority=P2&priority=P3"></iframe> -->
+          <iframe src="./burnup/index.html?since=2024-04-08&blocks=1911653"></iframe>
+      </div>
+    </div>
+  </div>
   
 
   <div id="wallpaper" class="milestones">
     <div class="desc-box-outer">
-      <div class="desc-box">
+      <div class="desc-box pt-8">
         <h2>Wallpaper Feature</h2>
-        <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1876160">Bug 1876160</a>
+        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1876160">Bug 1876160</a>
         <p>
           This chart tracks the Wallpaper feature for the New Tab page
         </p>
@@ -72,9 +114,9 @@
 
   <div id="weather" class="milestones">
     <div class="desc-box-outer">
-      <div class="desc-box">
+      <div class="desc-box pt-8">
         <h2>Weather Feature</h2>
-        <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1900698">Bug 1900698</a>
+        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1900698">Bug 1900698</a>
         <p>
           This chart tracks the Weather widget feature for the New Tab page
         </p>
@@ -91,9 +133,9 @@
 
   <div id="prefs" class="milestones">
     <div class="desc-box-outer">
-      <div class="desc-box">
+      <div class="desc-box pt-8">
         <h2>Prefs/Nimbus Cleanup</h2>
-        <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1909510">Bug 1909510</a>
+        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1909510">Bug 1909510</a>
         <p>
           This chart tracks the clean-up efforts for our Nimbus experiment prefs
         </p>
@@ -110,9 +152,9 @@
 
   <div id="a11y" class="milestones">
     <div class="desc-box-outer">
-      <div class="desc-box">
+      <div class="desc-box pt-8">
         <h2>a11y Review</h2>
-        <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1891109">Bug 1891109</a>
+        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1891109">Bug 1891109</a>
         <p>
           This chart tracks the accessibility review for the New Tab page
         </p>
@@ -129,9 +171,9 @@
 
   <!-- <div class="milestones">
     <div class="desc-box-outer">
-      <div class="desc-box">
+      <div class="desc-box pt-8">
         <h2>Wallpapers Feature</h2>
-        <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1855907">Bug 1855907</a>
+        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1855907">Bug 1855907</a>
         <p>
           This chart tracks the Wallpaper feature for the New Tab page
         </p>
@@ -147,9 +189,9 @@
 
   <div class="milestones">
     <div class="desc-box-outer">
-      <div class="desc-box">
+      <div class="desc-box pt-8">
         <h2>Weather Feature</h2>
-        <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1869015">Bug 1869015</a>
+        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1869015">Bug 1869015</a>
         <p>
           This chart tracks the meta bug for redesigning the Translations Settings UI,
           which is part of an <a href="https://www.outreachy.org/">Outreachy</a> project for the December 2023 cohort.
@@ -166,9 +208,9 @@
 
   <div class="milestones">
     <div class="desc-box-outer">
-      <div class="desc-box">
+      <div class="desc-box pt-8">
         <h2>Weather Feature</h2>
-        <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1869015">Bug 1869015</a>
+        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1869015">Bug 1869015</a>
         <p>
           This chart tracks the meta bug for redesigning the Translations Settings UI,
           which is part of an <a href="https://www.outreachy.org/">Outreachy</a> project for the December 2023 cohort.
@@ -187,9 +229,9 @@
 
   <div class="milestones">
     <div class="desc-box-outer">
-      <div class="desc-box">
+      <div class="desc-box pt-8">
         <h2>Desktop MVP H1 2023</h2>
-        <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1820214">Bug 1820214</a>
+        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1820214">Bug 1820214</a>
         <p>
           This chart tracks the MVP for Full-Page Translations on Firefox Desktop.
         </p>
