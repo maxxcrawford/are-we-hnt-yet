@@ -7,6 +7,7 @@
      <script src="https://cdn.tailwindcss.com"></script>
     <script src='static/areweyet/chart.js'></script>
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
   <h1><b>Are We New Tab Yet?</b></h1>
@@ -33,12 +34,18 @@
   <h1 class="bg-stone-200"><b>Ongoing Work</b></h1>
 
   <nav class="bg-stone-200 py-4 mb-8 sticky top-0 z-10">
-    <ul class="flex justify-center gap-4">
+    <ul class="flex justify-center gap-4 flex-wrap">
       <li>
         <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#personalization">personalization</a>
       </li>
       <li>
         <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#layout">layout</a>
+      </li>
+      <li>
+        <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#ads">unified ads api integr</a>
+      </li>
+      <li>
+        <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#contextual">contextual content</a>
       </li>
       <li>
         <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#wallpaper">wallpaper</a>
@@ -107,7 +114,26 @@
     <div style="width: 70%" class="iframe-container">
       <div>
           <!-- <iframe src="./burnup/index.html?since=2024-01-05&blocks=1916482&priority=P1&priority=P2&priority=P3"></iframe> -->
-          <iframe src="./burnup/index.html?since=2024-09-03&blocks=1916482"></iframe>
+          <iframe src="./burnup/index.html?since=2024-09-01&blocks=1916482"></iframe>
+      </div>
+    </div>
+  </div>
+  
+  <div id="contextual" class="milestones">
+    <div class="desc-box-outer">
+      <div class="desc-box pt-8">
+        <h2>Contextual content</h2>
+        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1916491">Bug 1916491</a>
+        <p>
+          This chart tracks the contextual content feature for the New Tab page
+        </p>
+      </div>
+    </div>
+
+    <div style="width: 70%" class="iframe-container">
+      <div>
+          <!-- <iframe src="./burnup/index.html?since=2024-01-05&blocks=1916491&priority=P1&priority=P2&priority=P3"></iframe> -->
+          <iframe src="./burnup/index.html?since=2024-09-02&blocks=1916491"></iframe>
       </div>
     </div>
   </div>
