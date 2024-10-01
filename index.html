@@ -10,309 +10,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-  <h1><b>Are We New Tab Yet?</b></h1>
-
-  <div id="all" class="milestones">
+  <header class="mb-12">
+    <h1 class="font-bold text-center py-2 text-3xl">Are We New Tab Yet?</h1>
+  </header>
+  <div id="all" class="milestones max-w-screen-lg mx-auto flex mb-12">
     <div class="desc-box-outer">
-      <div class="desc-box pt-8">
-        <h2>Firefox Homepage New Tab</h2>
+      <div class="desc-box shadow-md bg-stone-100 pt-8">
+        <h2 class="leading-tight block mb-2 font-bold text-xl">Firefox Homepage New Tab</h2>
         <p>
           This chart tracks the overall work in the Firefox New Tab page component.
           Anything P1-P3 are shown in this chart. To remove a bug from the chart mark
-          it as P4 or lower. The milestones are broken out below.
+          it as P4 or lower. The milestones max-w-screen-lg mx-auto flex mb-12 are broken out below.
         </p>
       </div>
     </div>
 
-    <div style="width: 70%" class="iframe-container">
+    <div class="iframe-container shadow w-[70%]">
       <div>
           <iframe src="./burnup/index.html?priority=P1&priority=P2&priority=P3&product=Firefox&component=New Tab Page"></iframe>
       </div>
     </div>
   </div>
 
-  <h1 class="bg-stone-200"><b>Ongoing Work</b></h1>
+  <!-- <h1 class="bg-stone-200"><b>Ongoing Work</b></h1> -->
 
-  <nav class="bg-stone-200 py-4 mb-8 sticky top-0 z-10">
-    <ul class="flex justify-center gap-4 flex-wrap">
-      <li>
-        <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#personalization">personalization</a>
-      </li>
-      <li>
-        <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#layout">layout</a>
-      </li>
-      <li>
-        <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#ads">unified ads api integr</a>
-      </li>
-      <li>
-        <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#contextual">contextual content</a>
-      </li>
-      <li>
-        <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#wallpaper">wallpaper</a>
-      </li>
-      <li>
-        <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#weather">weather</a>
-      </li>
-      <li>
-        <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#prefs">prefs</a>
-      </li>
-      <li>
-        <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#a11y">a11y</a>
-      </li>
-    </ul>
+  
+
+  <main>
+
+    <nav class="hidden lg:block bg-stone-200 py-4 mb-8 sticky top-0 z-10">
+      <h2 class="text-center text-xl font-bold mb-4">Ongoing HNT Work</h2>
+      <ul class="flex justify-center gap-4 flex-wrap">
+        <li>
+          <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#personalization">personalization</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#layout">layout</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#ads">unified ads api integr</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#contextual">contextual content</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#wallpaper">wallpaper</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#weather">weather</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#prefs">prefs</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#a11y">a11y</a>
+        </li>
+      </ul>
   </nav>
-
-  <div id="personalization" class="milestones">
+    
+  <div id="personalization" class="milestones max-w-screen-lg mx-auto flex mb-12">
     <div class="desc-box-outer">
-      <div class="desc-box pt-8">
-        <h2>Explicit Topic Personalization</h2>
-        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1904592">Bug 1904592</a>
+      <div class="desc-box shadow-md bg-stone-100 pt-8">
+        <h2 class="leading-tight block mb-2 font-bold text-xl">Explicit Topic Personalization</h2>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1904592">Bug 1904592</a>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=1904592&hide_resolved=1">(Tree)</a>
         <p>
           This chart tracks the effort to add explicit topic personalization for New Tab content
         </p>
       </div>
     </div>
 
-    <div style="width: 70%" class="iframe-container">
+    <div class="iframe-container shadow w-[70%]">
       <div>
-          <!-- <iframe src="./burnup/index.html?since=2024-04-10&blocks=1891109&priority=P1&priority=P2&priority=P3"></iframe> -->
           <iframe src="./burnup/index.html?since=2024-04-10&blocks=1904592"></iframe>
       </div>
     </div>
   </div>
 
-  <div id="layout" class="milestones">
+  <div id="layout" class="milestones max-w-screen-lg mx-auto flex mb-12">
     <div class="desc-box-outer">
-      <div class="desc-box pt-8">
-        <h2>Layout Experiment</h2>
-        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1911653">Bug 1911653</a>
+      <div class="desc-box shadow-md bg-stone-100 pt-8">
+        <h2 class="leading-tight block mb-2 font-bold text-xl">Layout Experiment</h2>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1911653">Bug 1911653</a>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=1911653&hide_resolved=1">(Tree)</a>
         <p>
           This chart tracks the layout experiment for the New Tab page
         </p>
       </div>
     </div>
 
-    <div style="width: 70%" class="iframe-container">
+    <div class="iframe-container shadow w-[70%]">
       <div>
-          <!-- <iframe src="./burnup/index.html?since=2024-01-05&blocks=1911653&priority=P1&priority=P2&priority=P3"></iframe> -->
           <iframe src="./burnup/index.html?since=2024-04-08&blocks=1911653"></iframe>
       </div>
     </div>
   </div>
   
-  <div id="ads" class="milestones">
+  <div id="ads" class="milestones max-w-screen-lg mx-auto flex mb-12">
     <div class="desc-box-outer">
-      <div class="desc-box pt-8">
-        <h2>Unified Ads API Client Integration</h2>
-        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1916482">Bug 1916482</a>
+      <div class="desc-box shadow-md bg-stone-100 pt-8">
+        <h2 class="leading-tight block mb-2 font-bold text-xl">Unified Ads API Client Integration</h2>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1916482">Bug 1916482</a>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=1916482&hide_resolved=1">(Tree)</a>
         <p>
           This chart tracks the unified ads API client integration for the New Tab page
         </p>
       </div>
     </div>
 
-    <div style="width: 70%" class="iframe-container">
+    <div class="iframe-container shadow w-[70%]">
       <div>
-          <!-- <iframe src="./burnup/index.html?since=2024-01-05&blocks=1916482&priority=P1&priority=P2&priority=P3"></iframe> -->
           <iframe src="./burnup/index.html?since=2024-09-01&blocks=1916482"></iframe>
       </div>
     </div>
   </div>
   
-  <div id="contextual" class="milestones">
+  <div id="contextual" class="milestones max-w-screen-lg mx-auto flex mb-12">
     <div class="desc-box-outer">
-      <div class="desc-box pt-8">
-        <h2>Contextual content</h2>
-        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1916491">Bug 1916491</a>
+      <div class="desc-box shadow-md bg-stone-100 pt-8">
+        <h2 class="leading-tight block mb-2 font-bold text-xl">Contextual content</h2>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1916491">Bug 1916491</a>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=1916491&hide_resolved=1">(Tree)</a>
         <p>
           This chart tracks the contextual content feature for the New Tab page
         </p>
       </div>
     </div>
 
-    <div style="width: 70%" class="iframe-container">
+    <div class="iframe-container shadow w-[70%]">
       <div>
-          <!-- <iframe src="./burnup/index.html?since=2024-01-05&blocks=1916491&priority=P1&priority=P2&priority=P3"></iframe> -->
           <iframe src="./burnup/index.html?since=2024-09-02&blocks=1916491"></iframe>
       </div>
     </div>
   </div>
   
 
-  <div id="wallpaper" class="milestones">
+  <div id="wallpaper" class="milestones max-w-screen-lg mx-auto flex mb-12">
     <div class="desc-box-outer">
-      <div class="desc-box pt-8">
-        <h2>Wallpaper Feature</h2>
-        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1876160">Bug 1876160</a>
+      <div class="desc-box shadow-md bg-stone-100 pt-8">
+        <h2 class="leading-tight block mb-2 font-bold text-xl">Wallpaper Feature</h2>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1876160">Bug 1876160</a>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=1876160&hide_resolved=1">(Tree)</a>
         <p>
           This chart tracks the Wallpaper feature for the New Tab page
         </p>
       </div>
     </div>
 
-    <div style="width: 70%" class="iframe-container">
+    <div class="iframe-container shadow w-[70%]">
       <div>
-          <!-- <iframe src="./burnup/index.html?since=2024-01-05&blocks=1876160&priority=P1&priority=P2&priority=P3"></iframe> -->
           <iframe src="./burnup/index.html?since=2024-01-05&blocks=1876160"></iframe>
       </div>
     </div>
   </div>
 
-  <div id="weather" class="milestones">
+  <div id="weather" class="milestones max-w-screen-lg mx-auto flex mb-12">
     <div class="desc-box-outer">
-      <div class="desc-box pt-8">
-        <h2>Weather Feature</h2>
-        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1900698">Bug 1900698</a>
+      <div class="desc-box shadow-md bg-stone-100 pt-8">
+        <h2 class="leading-tight block mb-2 font-bold text-xl">Weather Feature</h2>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1900698">Bug 1900698</a>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=1900698&hide_resolved=1">(Tree)</a>
         <p>
           This chart tracks the Weather widget feature for the New Tab page
         </p>
       </div>
     </div>
 
-    <div style="width: 70%" class="iframe-container">
+    <div class="iframe-container shadow w-[70%]">
       <div>
-          <!-- <iframe src="./burnup/index.html?since=2024-04-05&blocks=1890136&priority=P1&priority=P2&priority=P3"></iframe> -->
           <iframe src="./burnup/index.html?since=2024-04-05&blocks=1900698"></iframe>
       </div>
     </div>
   </div>
 
-  <div id="prefs" class="milestones">
+  <div id="prefs" class="milestones max-w-screen-lg mx-auto flex mb-12">
     <div class="desc-box-outer">
-      <div class="desc-box pt-8">
-        <h2>Prefs/Nimbus Cleanup</h2>
-        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1909510">Bug 1909510</a>
+      <div class="desc-box shadow-md bg-stone-100 pt-8">
+        <h2 class="leading-tight block mb-2 font-bold text-xl">Prefs/Nimbus Cleanup</h2>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1909510">Bug 1909510</a>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=1909510&hide_resolved=1">(Tree)</a>
         <p>
           This chart tracks the clean-up efforts for our Nimbus experiment prefs
         </p>
       </div>
     </div>
 
-    <div style="width: 70%" class="iframe-container">
+    <div class="iframe-container shadow w-[70%]">
       <div>
-          <!-- <iframe src="./burnup/index.html?since=2024-04-10&blocks=1891109&priority=P1&priority=P2&priority=P3"></iframe> -->
           <iframe src="./burnup/index.html?since=2024-04-10&blocks=1891109"></iframe>
       </div>
     </div>
   </div>
 
-  <div id="a11y" class="milestones">
+  <div id="a11y" class="milestones max-w-screen-lg mx-auto flex mb-12">
     <div class="desc-box-outer">
-      <div class="desc-box pt-8">
-        <h2>a11y Review</h2>
-        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1891109">Bug 1891109</a>
+      <div class="desc-box shadow-md bg-stone-100 pt-8">
+        <h2 class="leading-tight block mb-2 font-bold text-xl">a11y Review</h2>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1891109">Bug 1891109</a>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=1891109&hide_resolved=1">(Tree)</a>
         <p>
           This chart tracks the accessibility review for the New Tab page
         </p>
       </div>
     </div>
 
-    <div style="width: 70%" class="iframe-container">
+    <div class="iframe-container shadow w-[70%]">
       <div>
-          <!-- <iframe src="./burnup/index.html?since=2024-04-10&blocks=1891109&priority=P1&priority=P2&priority=P3"></iframe> -->
           <iframe src="./burnup/index.html?since=2024-04-10&blocks=1891109"></iframe>
       </div>
     </div>
   </div>
+  </main>
 
-  <!-- <div class="milestones">
-    <div class="desc-box-outer">
-      <div class="desc-box pt-8">
-        <h2>Wallpapers Feature</h2>
-        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1855907">Bug 1855907</a>
-        <p>
-          This chart tracks the Wallpaper feature for the New Tab page
-        </p>
-      </div>
+  <footer class="bg-stone-200 pt-8">
+    
+    <div class="max-w-screen-lg mx-auto pb-16 px-8 lg:px-0">
+        <h1><b>About Are We * Yet</b></h1>
+        <p><strong>Are We * Yet</strong> is a template site for sharing updates to Mozilla projects.</p>
+        <p>The source for this project can be found at <a class="underline" href="https://github.com/maxxcrawford/are-we-hnt-yet/">github.com/maxxcrawford/are-we-hnt-yet/</a>.</p>
+        <p>This site was forked from <a class="underline" href="https://github.com/bgrins/areweyet">github.com/bgrins/areweyet</a></p>
+        <p>A list of all "are we yet" project sites is kept at <a class="underline" href="https://wiki.mozilla.org/Areweyet">wiki.mozilla.org/Areweyet</a></p>
     </div>
-
-    <div style="width: 70%" class="iframe-container">
-      <div>
-          <iframe src="./burnup/index.html?since=2023-11-01&blocks=1855907&priority=P1&priority=P2&priority=P3"></iframe>
-      </div>
-    </div>
-  </div>
-
-  <div class="milestones">
-    <div class="desc-box-outer">
-      <div class="desc-box pt-8">
-        <h2>Weather Feature</h2>
-        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1869015">Bug 1869015</a>
-        <p>
-          This chart tracks the meta bug for redesigning the Translations Settings UI,
-          which is part of an <a href="https://www.outreachy.org/">Outreachy</a> project for the December 2023 cohort.
-        </p>
-      </div>
-    </div>
-
-    <div style="width: 70%" class="iframe-container">
-      <div>
-          <iframe src="./burnup/index.html?since=2023-12-01&blocks=1869015&priority=P1&priority=P2&priority=P3"></iframe>
-      </div>
-    </div>
-  </div>
-
-  <div class="milestones">
-    <div class="desc-box-outer">
-      <div class="desc-box pt-8">
-        <h2>Weather Feature</h2>
-        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1869015">Bug 1869015</a>
-        <p>
-          This chart tracks the meta bug for redesigning the Translations Settings UI,
-          which is part of an <a href="https://www.outreachy.org/">Outreachy</a> project for the December 2023 cohort.
-        </p>
-      </div>
-    </div>
-
-    <div style="width: 70%" class="iframe-container">
-      <div>
-          <iframe src="./burnup/index.html?since=2023-12-01&blocks=1869015&priority=P1&priority=P2&priority=P3"></iframe>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- <h1><b>Completed Work</b></h1>
-
-  <div class="milestones">
-    <div class="desc-box-outer">
-      <div class="desc-box pt-8">
-        <h2>Desktop MVP H1 2023</h2>
-        <a class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1820214">Bug 1820214</a>
-        <p>
-          This chart tracks the MVP for Full-Page Translations on Firefox Desktop.
-        </p>
-      </div>
-    </div>
-
-    <div style="width: 70%" class="iframe-container">
-      <div>
-          <iframe src="./burnup/index.html?completed=true&blocks=1820214&priority=P1&priority=P2&priority=P3"></iframe>
-      </div>
-    </div>
-  </div> -->
-
-  <h1><b>About Are We * Yet</b></h1>
-
-  <div class="summary-box">
-    <hr />
-    <p>
-      <strong>Are We * Yet</strong> is a template site for sharing updates to Mozilla projects.
-      <ul>
-        <li>
-          The source for this project can be found at
-          <a href="https://github.com/maxxcrawford/are-we-hnt-yet/">github.com/maxxcrawford/are-we-hnt-yet/</a>.
-        </li>
-        <li>
-          This site was forked from
-          <a href="https://github.com/bgrins/areweyet">github.com/bgrins/areweyet</a>
-        </li>
-        <li>
-          A list of all "are we yet" project sites is kept at
-          <a href="https://wiki.mozilla.org/Areweyet">wiki.mozilla.org/Areweyet</a>
-        </li>
-      </ul>
-    </p>
-  </div>
+  </footer>
 
 </body>
 </html>
