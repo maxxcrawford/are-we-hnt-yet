@@ -40,7 +40,13 @@
 
     <nav class="hidden lg:block bg-stone-200 py-4 mb-8 sticky top-0 z-10">
       <h2 class="text-center text-xl font-bold mb-4">Ongoing HNT Work</h2>
-      <ul class="flex justify-center gap-4 flex-wrap">
+      <ul class="flex justify-center gap-4 flex-wrap max-w-screen-lg mx-auto">
+        <li>
+          <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#iab-banners">IAB banners</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#sections-personalization">sections personalization</a>
+        </li>
         <li>
           <a class="block px-4 py-2 border border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#sections">sections</a>
         </li>
@@ -71,7 +77,47 @@
       </ul>
   </nav>
     
+  <div id="sections-personalization" class="milestones max-w-screen-lg mx-auto flex mb-12">
+    <div class="desc-box-outer">
+      <div class="desc-box shadow-md bg-stone-100 pt-8">
+        <h2 class="leading-tight block mb-2 font-bold text-xl">IAB banners</h2>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1932198">Bug 1932198</a>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=1932198&hide_resolved=1">(Tree)</a>
+        <p>
+          This chart tracks the effort to add IAB banners to HNT ads repo
+        </p>
+      </div>
+    </div>
+    
+    <div class="iframe-container shadow w-[70%]">
+      <div>
+          <iframe src="./burnup/index.html?since=2024-11-18&blocks=1932198?v=1"></iframe>
+      </div>
+    </div>
+  </div>
+    
+  <div id="sections-personalization" class="milestones max-w-screen-lg mx-auto flex mb-12">
+    <div class="desc-box-outer">
+      <div class="desc-box shadow-md bg-stone-100 pt-8">
+        <h2 class="leading-tight block mb-2 font-bold text-xl">Sections Personalization</h2>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1932181">Bug 1932181</a>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=1932181&hide_resolved=1">(Tree)</a>
+        <p>
+          This chart tracks the effort to experiment with additional sections / personalization UI for New Tab content
+        </p>
+      </div>
+    </div>
+    
+    <div class="iframe-container shadow w-[70%]">
+      <div>
+          <iframe src="./burnup/index.html?since=2024-11-18&blocks=1932181?v=1"></iframe>
+      </div>
+    </div>
+  </div>
+  
   <div id="sections" class="milestones max-w-screen-lg mx-auto flex mb-12">
+    
+    
     <div class="desc-box-outer">
       <div class="desc-box shadow-md bg-stone-100 pt-8">
         <h2 class="leading-tight block mb-2 font-bold text-xl">Content layouts experiment</h2>
