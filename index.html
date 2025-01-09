@@ -44,6 +44,9 @@
       </div>
       <ul class="flex justify-center gap-4 flex-wrap max-w-screen-lg mx-auto">
         <li>
+          <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#addon">HNT add-on</a>
+        </li>
+        <li>
           <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#decouple-hnt">decouple HNT</a>
         </li>
         <li>
@@ -81,6 +84,25 @@
         </li>
       </ul>
   </nav>
+    
+  <div id="addon" class="milestones max-w-screen-lg mx-auto flex mb-12 border-stone-200 border-b pb-16">
+    <div class="desc-box-outer">
+      <div class="desc-box shadow-md bg-stone-100 pt-8">
+        <h2 class="leading-tight block mb-2 font-bold text-xl">HNT Add-on</h2>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1938445">Bug 1938445</a>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=1938445&hide_resolved=1">(Tree)</a>
+        <p>
+          This chart tracks the effort to ship New Tab as an add-on. 
+        </p>
+      </div>
+    </div>
+    
+    <div class="iframe-container shadow w-[70%]">
+      <div>
+          <iframe src="./burnup/index.html?since=2024-12-18&blocks=1938445?v=1"></iframe>
+      </div>
+    </div>
+  </div>
     
   <div id="decouple-hnt" class="milestones max-w-screen-lg mx-auto flex mb-12 border-stone-200 border-b pb-16">
     <div class="desc-box-outer">
