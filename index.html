@@ -20,7 +20,7 @@
         <p>
           This chart tracks the overall work in the Firefox New Tab page component.
           Anything P1-P3 are shown in this chart. To remove a bug from the chart mark
-          it as P4 or lower. The milestones max-w-screen-lg mx-auto flex mb-12 border-stone-200 border-b pb-16 are broken out below.
+          it as P4 or lower. The milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pt-48 are broken out below.
         </p>
       </div>
     </div>
@@ -37,12 +37,15 @@
   
 
   <main>
-    <nav class="block bg-stone-200 py-4 mb-8 lg:sticky top-0 z-10 shadow text-center">
+    <nav class="block bg-stone-200 py-4 lg:sticky top-0 z-10 shadow text-center">
       <div class="flex  justify-center gap-4 max-w-xl mx-auto mb-4">
         <h2 class="text-center text-xl font-bold ">Ongoing HNT Work</h2>
         <a class="underline" href="https://bugzilla.mozilla.org/buglist.cgi?component=New%20Tab%20Page&classification=Client%20Software&classification=Developer%20Infrastructure&classification=Components&classification=Server%20Software&classification=Other&query_format=advanced&keywords=meta%2C%20&keywords_type=allwords&resolution=---&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&product=Firefox&order=Importance">see all meta bugs</a>
       </div>
       <ul class="flex justify-center gap-4 flex-wrap max-w-screen-lg mx-auto">
+        <li>
+          <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#custom-wallpapers">custom wallpapers</a>
+        </li>
         <li>
           <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#addon">HNT add-on</a>
         </li>
@@ -83,9 +86,28 @@
           <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#a11y">a11y</a>
         </li>
       </ul>
-  </nav>
+    </nav>
     
-  <div id="addon" class="milestones max-w-screen-lg mx-auto flex mb-12 border-stone-200 border-b pb-16">
+  <div id="custom-wallpapers" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pt-8">
+    <div class="desc-box-outer">
+      <div class="desc-box shadow-md bg-stone-100 pt-8">
+        <h2 class="leading-tight block mb-2 font-bold text-xl">Custom Wallpapers</h2>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1920774">Bug 1920774</a>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=1920774&hide_resolved=1">(Tree)</a>
+        <p>
+          This chart tracks the effort to ship New Tab as an add-on. 
+        </p>
+      </div>
+    </div>
+    
+    <div class="iframe-container shadow w-[70%]">
+      <div>
+          <iframe src="./burnup/index.html?since=2025-01-23&blocks=1920774?v=1"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div id="addon" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pt-48">
     <div class="desc-box-outer">
       <div class="desc-box shadow-md bg-stone-100 pt-8">
         <h2 class="leading-tight block mb-2 font-bold text-xl">HNT Add-on</h2>
@@ -104,7 +126,7 @@
     </div>
   </div>
     
-  <div id="decouple-hnt" class="milestones max-w-screen-lg mx-auto flex mb-12 border-stone-200 border-b pb-16">
+  <div id="decouple-hnt" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pt-48">
     <div class="desc-box-outer">
       <div class="desc-box shadow-md bg-stone-100 pt-8">
         <h2 class="leading-tight block mb-2 font-bold text-xl">Decouple HNT</h2>
@@ -123,7 +145,7 @@
     </div>
   </div>
     
-  <div id="iab-banners" class="milestones max-w-screen-lg mx-auto flex mb-12 border-stone-200 border-b pb-16">
+  <div id="iab-banners" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pt-48">
     <div class="desc-box-outer">
       <div class="desc-box shadow-md bg-stone-100 pt-8">
         <h2 class="leading-tight block mb-2 font-bold text-xl">IAB banners</h2>
@@ -142,7 +164,7 @@
     </div>
   </div>
     
-  <div id="sections-personalization" class="milestones max-w-screen-lg mx-auto flex mb-12 border-stone-200 border-b pb-16">
+  <div id="sections-personalization" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pt-48">
     <div class="desc-box-outer">
       <div class="desc-box shadow-md bg-stone-100 pt-8">
         <h2 class="leading-tight block mb-2 font-bold text-xl">Sections Personalization</h2>
@@ -161,7 +183,7 @@
     </div>
   </div>
   
-  <div id="sections" class="milestones max-w-screen-lg mx-auto flex mb-12 border-stone-200 border-b pb-16">
+  <div id="sections" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pt-48">
     
     
     <div class="desc-box-outer">
@@ -182,7 +204,7 @@
     </div>
   </div>
   
-  <div id="personalization" class="milestones max-w-screen-lg mx-auto flex mb-12 border-stone-200 border-b pb-16">
+  <div id="personalization" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pt-48">
     <div class="desc-box-outer">
       <div class="desc-box shadow-md bg-stone-100 pt-8">
         <h2 class="leading-tight block mb-2 font-bold text-xl">Explicit Topic Personalization</h2>
@@ -201,7 +223,7 @@
     </div>
   </div>
 
-  <div id="layout" class="milestones max-w-screen-lg mx-auto flex mb-12 border-stone-200 border-b pb-16">
+  <div id="layout" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pt-48">
     <div class="desc-box-outer">
       <div class="desc-box shadow-md bg-stone-100 pt-8">
         <h2 class="leading-tight block mb-2 font-bold text-xl">Layout Experiment</h2>
@@ -220,7 +242,7 @@
     </div>
   </div>
   
-  <div id="ads" class="milestones max-w-screen-lg mx-auto flex mb-12 border-stone-200 border-b pb-16">
+  <div id="ads" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pt-48">
     <div class="desc-box-outer">
       <div class="desc-box shadow-md bg-stone-100 pt-8">
         <h2 class="leading-tight block mb-2 font-bold text-xl">Unified Ads API Client Integration</h2>
@@ -239,7 +261,7 @@
     </div>
   </div>
   
-  <div id="contextual" class="milestones max-w-screen-lg mx-auto flex mb-12 border-stone-200 border-b pb-16">
+  <div id="contextual" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pt-48">
     <div class="desc-box-outer">
       <div class="desc-box shadow-md bg-stone-100 pt-8">
         <h2 class="leading-tight block mb-2 font-bold text-xl">Contextual content</h2>
@@ -259,7 +281,7 @@
   </div>
   
 
-  <div id="wallpaper" class="milestones max-w-screen-lg mx-auto flex mb-12 border-stone-200 border-b pb-16">
+  <div id="wallpaper" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pt-48">
     <div class="desc-box-outer">
       <div class="desc-box shadow-md bg-stone-100 pt-8">
         <h2 class="leading-tight block mb-2 font-bold text-xl">Wallpaper Feature</h2>
@@ -278,7 +300,7 @@
     </div>
   </div>
 
-  <div id="weather" class="milestones max-w-screen-lg mx-auto flex mb-12 border-stone-200 border-b pb-16">
+  <div id="weather" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pt-48">
     <div class="desc-box-outer">
       <div class="desc-box shadow-md bg-stone-100 pt-8">
         <h2 class="leading-tight block mb-2 font-bold text-xl">Weather Feature</h2>
@@ -297,7 +319,7 @@
     </div>
   </div>
 
-  <div id="prefs" class="milestones max-w-screen-lg mx-auto flex mb-12 border-stone-200 border-b pb-16">
+  <div id="prefs" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pt-48">
     <div class="desc-box-outer">
       <div class="desc-box shadow-md bg-stone-100 pt-8">
         <h2 class="leading-tight block mb-2 font-bold text-xl">Prefs/Nimbus Cleanup</h2>
@@ -316,7 +338,7 @@
     </div>
   </div>
 
-  <div id="a11y" class="milestones max-w-screen-lg mx-auto flex mb-12 border-stone-200 border-b pb-16">
+  <div id="a11y" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pt-48">
     <div class="desc-box-outer">
       <div class="desc-box shadow-md bg-stone-100 pt-8">
         <h2 class="leading-tight block mb-2 font-bold text-xl">a11y Review</h2>
@@ -336,7 +358,7 @@
   </div>
   </main>
 
-  <footer class="bg-stone-200 pt-8">
+  <footer class="bg-stone-200 pt-8 mt-48">
     
     <div class="max-w-screen-lg mx-auto pb-16 px-8 lg:px-0">
         <h1><b>About Are We * Yet</b></h1>
