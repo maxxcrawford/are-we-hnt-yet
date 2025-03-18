@@ -44,6 +44,9 @@
       </div>
       <ul class="flex justify-center gap-4 flex-wrap max-w-screen-lg mx-auto">
         <li>
+          <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#ads-content-reporting">report ad/content</a>
+        </li>
+        <li>
           <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#in-content-messaging">in-content messaging</a>
         </li>
         <li>
@@ -52,25 +55,25 @@
         <li>
           <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#tech-debt">tech debut</a>
         </li>
-        <li>
+        <!-- <li>
           <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#shortcuts-refresh">shortcuts refresh</a>
-        </li>
+        </li> -->
         <li>
           <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#custom-wallpapers">custom wallpapers</a>
         </li>
         <li>
           <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#addon">HNT add-on</a>
         </li>
-        <li>
+        <!-- <li>
           <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#decouple-hnt">decouple HNT</a>
-        </li>
+        </li> -->
         <li>
           <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#iab-banners">IAB banners</a>
         </li>
         <li>
           <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#sections-personalization">sections personalization</a>
         </li>
-        <li>
+        <!-- <li>
           <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#sections">sections</a>
         </li>
         <li>
@@ -96,14 +99,34 @@
         </li>
         <li>
           <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#a11y">a11y</a>
-        </li>
+        </li> -->
       </ul>
     </nav>
 
 
 
+  <!-- Bug 1954652 - Report ad/content -->
+  <div id="ads-content-reporting" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pb-16 mb-16">
+    <div class="desc-box-outer">
+      <div class="desc-box shadow-md bg-stone-100 pt-8">
+        <h2 class="leading-tight block mb-2 font-bold text-xl">Content / Ad Reporting </h2>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1954652">Bug 1954652</a>
+        <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=1954652&hide_resolved=1">(Tree)</a>
+        <p>
+          This chart tracks the effort to add a content/ads reporting feature  on new tab.
+        </p>
+      </div>
+    </div>
+    
+    <div class="iframe-container shadow w-[70%]">
+      <div>
+          <iframe src="./burnup/index.html?since=2025-03-16&blocks=1954652?v=1"></iframe>
+      </div>
+    </div>
+  </div>
+
   <!-- Bug 1950408 - Shortcuts Refresh -->
-  <div id="inferred-personalization-messaging" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pb-16 mb-16">
+  <div id="in-content-messaging" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pb-16 mb-16">
     <div class="desc-box-outer">
       <div class="desc-box shadow-md bg-stone-100 pt-8">
         <h2 class="leading-tight block mb-2 font-bold text-xl">In-content Messaging</h2>
