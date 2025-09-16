@@ -43,6 +43,9 @@
         </div>
         <ul class="flex justify-center gap-4 flex-wrap max-w-screen-lg mx-auto lg:flex-col lg:h-full lg:overflow-y-auto lg:grid xl:grid-cols-2">
           <li>
+            <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#weather-opt-in">weather opt-in</a>
+          </li>
+          <li>
             <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#productivity-widgets">productivity widgets</a>
           </li>
 
@@ -133,6 +136,26 @@
     </aside>
     <main class="lg:w-3/4">
 
+    <!-- Bug 1988858 - New Tab Activation -->
+    <div id="#weather-opt-in" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pb-16 mb-16">
+      <div class="desc-box-outer">
+        <div class="desc-box shadow-md bg-stone-100 pt-8">
+          <h2 class="leading-tight block mb-2 font-bold text-xl">Weather Widget Opt-in </h2>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1988858">Bug 1988858</a>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=1988858&hide_resolved=1">(Tree)</a>
+          <p>
+            This chart tracks the effort to opt-in to Weather widget location sharing.
+          </p>
+        </div>
+      </div>
+
+      <div class="iframe-container shadow w-[70%]">
+        <div>
+            <iframe src="./burnup/index.html?since=2025-09-15&blocks=1988858?v=1"></iframe>
+        </div>
+      </div>
+    </div>
+
     <!-- Bug 1976901 - New Tab Activation -->
     <div id="#productivity-widgets" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pb-16 mb-16">
       <div class="desc-box-outer">
@@ -145,7 +168,7 @@
           </p>
         </div>
       </div>
-      
+
       <div class="iframe-container shadow w-[70%]">
         <div>
             <iframe src="./burnup/index.html?since=2025-07-10&blocks=1976901?v=1"></iframe>
