@@ -126,14 +126,8 @@ hr {
   color: rgba(0, 0, 0, .2);
 }
 
-header h1 {
-  /* font-weight: 300;
-  color: var(--heading-color); */
+header {
   background: var(--heading-background);
-  /* padding: 5px;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 35px; */
 }
 
 .iframe-container {
