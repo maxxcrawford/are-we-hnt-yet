@@ -47,6 +47,9 @@
         </div>
         <ul class="flex justify-center gap-4 flex-wrap max-w-screen-lg mx-auto lg:flex-col lg:h-full lg:overflow-y-auto lg:grid xl:grid-cols-2">
           <li>
+            <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#settings-redesign">settings redesign</a>
+          </li>
+          <li>
             <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#daily-briefing">daily briefing</a>
           </li>
           <li>
@@ -143,6 +146,27 @@
     </aside>
     <main class="lg:w-3/4">
 
+    <!-- Bug 1971399 - about:preferences#home Redesign -->
+    <div id="settings-redesign" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pb-16 mb-16">
+      <div class="desc-box-outer">
+        <div class="desc-box shadow-md bg-stone-100 pt-8">
+          <h2 class="leading-tight block mb-2 font-bold text-xl">Settings Redesign </h2>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1971399">Bug 1971399</a>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=1971399&hide_resolved=1">(Tree)</a>
+          <p>
+            This chart tracks the effort to update about:preferences#home to the new design style
+          </p>
+        </div>
+      </div>
+      
+      <div class="iframe-container shadow w-[70%]">
+        <div>
+            <iframe src="./burnup/index.html?since=2025-11-01&blocks=1971399?v=1"></iframe>
+        </div>
+      </div>
+    </div>
+
+      
     <!-- Bug 1982673 - Daily Briefing  -->
     <div id="daily-briefing" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pb-16 mb-16">
       <div class="desc-box-outer">
