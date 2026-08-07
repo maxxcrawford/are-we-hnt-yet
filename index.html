@@ -47,6 +47,12 @@
         </div>
         <ul class="flex justify-center gap-4 flex-wrap max-w-screen-lg mx-auto lg:flex-col lg:h-full lg:overflow-y-auto lg:grid xl:grid-cols-2">
           <li>
+            <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#layout-experimentation">layout experimentation</a>
+          </li>
+          <li>
+            <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#ds-admin">ds admin</a>
+          </li>
+          <li>
             <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#theme-selection">theme selection</a>
           </li>
           <li>
@@ -181,6 +187,46 @@
       </nav>
     </aside>
     <main class="lg:w-3/4">
+
+    <!-- Bug 2061738 - Layout Experimentation -->
+    <div id="layout-experimentation" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pb-16 mb-16">
+      <div class="desc-box-outer">
+        <div class="desc-box shadow-md bg-stone-100 pt-8">
+          <h2 class="leading-tight block mb-2 font-bold text-xl">Layout Experimentation </h2>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=2061738">Bug 2061738</a>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=2061738&hide_resolved=1">(Tree)</a>
+          <p>
+            This chart tracks the effort to support New Tab page/content layout experimentation.
+          </p>
+        </div>
+      </div>
+
+      <div class="iframe-container shadow w-[70%]">
+        <div>
+            <iframe src="./burnup/index.html?since=2026-08-07&blocks=2061738?v=1"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bug 2056904 - Discovery Stream Admin -->
+    <div id="ds-admin" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pb-16 mb-16">
+      <div class="desc-box-outer">
+        <div class="desc-box shadow-md bg-stone-100 pt-8">
+          <h2 class="leading-tight block mb-2 font-bold text-xl">Discovery Stream Admin </h2>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=2056904">Bug 2056904</a>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=2056904&hide_resolved=1">(Tree)</a>
+          <p>
+            This chart tracks the effort to update the Discovery Stream Admin tools on New Tab.
+          </p>
+        </div>
+      </div>
+
+      <div class="iframe-container shadow w-[70%]">
+        <div>
+            <iframe src="./burnup/index.html?since=2026-07-22&blocks=2056904?v=1"></iframe>
+        </div>
+      </div>
+    </div>
 
     <!-- Bug 2056289 - Browser Theme Selection -->
     <div id="theme-selection" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pb-16 mb-16">
