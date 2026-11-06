@@ -47,6 +47,30 @@
         </div>
         <ul class="flex justify-center gap-4 flex-wrap max-w-screen-lg mx-auto lg:flex-col lg:h-full lg:overflow-y-auto lg:grid xl:grid-cols-2">
           <li>
+            <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#solitaire">solitaire</a>
+          </li>
+          <li>
+            <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#horoscopes">horoscopes</a>
+          </li>
+          <li>
+            <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#travel">travel</a>
+          </li>
+          <li>
+            <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#shortcuts-first-48">shortcuts first 48</a>
+          </li>
+          <li>
+            <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#ad-reporting-controls">ad reporting controls</a>
+          </li>
+          <li>
+            <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#framed-widgets">framed widgets</a>
+          </li>
+          <li>
+            <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#test-flakiness">test flakiness</a>
+          </li>
+          <li>
+            <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#dynamic-wallpapers">dynamic wallpapers</a>
+          </li>
+          <li>
             <a class="block px-4 py-2 border rounded border-black focus:bg-stone-300 hover:bg-black hover:text-white" href="#recent-searches">recent searches</a>
           </li>
           <li>
@@ -190,6 +214,166 @@
       </nav>
     </aside>
     <main class="lg:w-3/4">
+
+    <!-- Bug 2090226 - Solitaire Widget -->
+    <div id="solitaire" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pb-16 mb-16">
+      <div class="desc-box-outer">
+        <div class="desc-box shadow-md bg-stone-100 pt-8">
+          <h2 class="leading-tight block mb-2 font-bold text-xl">Solitaire Widget </h2>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=2090226">Bug 2090226</a>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=2090226&hide_resolved=1">(Tree)</a>
+          <p>
+            This chart tracks the effort to build the Solitaire widget for New Tab.
+          </p>
+        </div>
+      </div>
+
+      <div class="iframe-container shadow w-[70%]">
+        <div>
+            <iframe src="./burnup/index.html?since=2026-11-06&blocks=2090226?v=1"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bug 2090224 - Horoscopes Widget -->
+    <div id="horoscopes" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pb-16 mb-16">
+      <div class="desc-box-outer">
+        <div class="desc-box shadow-md bg-stone-100 pt-8">
+          <h2 class="leading-tight block mb-2 font-bold text-xl">Horoscopes Widget </h2>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=2090224">Bug 2090224</a>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=2090224&hide_resolved=1">(Tree)</a>
+          <p>
+            This chart tracks the effort to build the Horoscopes widget for New Tab.
+          </p>
+        </div>
+      </div>
+
+      <div class="iframe-container shadow w-[70%]">
+        <div>
+            <iframe src="./burnup/index.html?since=2026-11-06&blocks=2090224?v=1"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bug 2089608 - Travel Widget -->
+    <div id="travel" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pb-16 mb-16">
+      <div class="desc-box-outer">
+        <div class="desc-box shadow-md bg-stone-100 pt-8">
+          <h2 class="leading-tight block mb-2 font-bold text-xl">Travel Widget </h2>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=2089608">Bug 2089608</a>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=2089608&hide_resolved=1">(Tree)</a>
+          <p>
+            This chart tracks the effort to build the Travel widget for New Tab.
+          </p>
+        </div>
+      </div>
+
+      <div class="iframe-container shadow w-[70%]">
+        <div>
+            <iframe src="./burnup/index.html?since=2026-11-05&blocks=2089608?v=1"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bug 2088995 - Improve Shortcuts for First 48 -->
+    <div id="shortcuts-first-48" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pb-16 mb-16">
+      <div class="desc-box-outer">
+        <div class="desc-box shadow-md bg-stone-100 pt-8">
+          <h2 class="leading-tight block mb-2 font-bold text-xl">Improve Shortcuts for First 48 </h2>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=2088995">Bug 2088995</a>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=2088995&hide_resolved=1">(Tree)</a>
+          <p>
+            This chart tracks the effort to make the New Tab shortcuts row more useful for new profiles in their first 48 hours, including action shortcuts and refreshed defaults.
+          </p>
+        </div>
+      </div>
+
+      <div class="iframe-container shadow w-[70%]">
+        <div>
+            <iframe src="./burnup/index.html?since=2026-11-04&blocks=2088995?v=1"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bug 2087205 - Ad Reporting and Dismissal Controls -->
+    <div id="ad-reporting-controls" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pb-16 mb-16">
+      <div class="desc-box-outer">
+        <div class="desc-box shadow-md bg-stone-100 pt-8">
+          <h2 class="leading-tight block mb-2 font-bold text-xl">Ad Reporting and Dismissal Controls </h2>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=2087205">Bug 2087205</a>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=2087205&hide_resolved=1">(Tree)</a>
+          <p>
+            This chart tracks the effort to unify ad reporting and dismissal controls across tiles, native ads, and suggest ads on New Tab.
+          </p>
+        </div>
+      </div>
+
+      <div class="iframe-container shadow w-[70%]">
+        <div>
+            <iframe src="./burnup/index.html?since=2026-10-29&blocks=2087205?v=1"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bug 2078917 - Framed Widget Infrastructure -->
+    <div id="framed-widgets" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pb-16 mb-16">
+      <div class="desc-box-outer">
+        <div class="desc-box shadow-md bg-stone-100 pt-8">
+          <h2 class="leading-tight block mb-2 font-bold text-xl">Framed Widget Infrastructure </h2>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=2078917">Bug 2078917</a>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=2078917&hide_resolved=1">(Tree)</a>
+          <p>
+            This chart tracks the effort to build infrastructure for framed widgets on New Tab.
+          </p>
+        </div>
+      </div>
+
+      <div class="iframe-container shadow w-[70%]">
+        <div>
+            <iframe src="./burnup/index.html?since=2026-10-06&blocks=2078917?v=1"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bug 2072711 - Browser Test Flakiness -->
+    <div id="test-flakiness" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pb-16 mb-16">
+      <div class="desc-box-outer">
+        <div class="desc-box shadow-md bg-stone-100 pt-8">
+          <h2 class="leading-tight block mb-2 font-bold text-xl">Browser Test Flakiness </h2>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=2072711">Bug 2072711</a>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=2072711&hide_resolved=1">(Tree)</a>
+          <p>
+            This chart tracks the effort to fix flaky tests in browser/extensions/newtab/test/browser.
+          </p>
+        </div>
+      </div>
+
+      <div class="iframe-container shadow w-[70%]">
+        <div>
+            <iframe src="./burnup/index.html?since=2026-09-16&blocks=2072711?v=1"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bug 2070282 - Dynamic Light/Dark Wallpapers -->
+    <div id="dynamic-wallpapers" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pb-16 mb-16">
+      <div class="desc-box-outer">
+        <div class="desc-box shadow-md bg-stone-100 pt-8">
+          <h2 class="leading-tight block mb-2 font-bold text-xl">Dynamic Light/Dark Wallpapers </h2>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/show_bug.cgi?id=2070282">Bug 2070282</a>
+          <a target="_blank" class="underline" href="https://bugzilla.mozilla.org/showdependencytree.cgi?id=2070282&hide_resolved=1">(Tree)</a>
+          <p>
+            This chart tracks the effort to keep Firefox-category wallpapers matched to the user's light or dark theme.
+          </p>
+        </div>
+      </div>
+
+      <div class="iframe-container shadow w-[70%]">
+        <div>
+            <iframe src="./burnup/index.html?since=2026-09-08&blocks=2070282?v=1"></iframe>
+        </div>
+      </div>
+    </div>
 
     <!-- Bug 2064169 - Recent Searches Widget -->
     <div id="recent-searches" class="milestones max-w-screen-lg mx-auto flex mt-0 border-stone-200 border-b pb-16 mb-16">
